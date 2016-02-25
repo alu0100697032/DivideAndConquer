@@ -3,9 +3,13 @@
  * Package name: framework
  * Proyect name: DivideAndConquer
  */
-package framework;
+package mergesort;
 
 import java.util.ArrayList;
+
+import framework.Framework;
+import framework.Problem;
+import framework.Solution;
 
 public class MergeSort extends Framework{
 	/**
@@ -20,7 +24,7 @@ public class MergeSort extends Framework{
 	@Override
 	protected boolean isSimple(Problem problem) {
 		// TODO Auto-generated method stub)
-		return (	((MergeSortDescription)problem).getProblemSize() <= 1);
+		return (((MergeSortDescription)problem).getProblemSize() <= 1);
 	}
 
 	/* (non-Javadoc)

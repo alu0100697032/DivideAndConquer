@@ -3,9 +3,12 @@
  * Package name: framework
  * Proyect name: DivideAndConquer
  */
-package framework;
+package mergesort;
 
 import java.util.ArrayList;
+
+import framework.Problem;
+import framework.Solution;
 
 public class MergeSortDescription implements Problem, Solution{
 	/** 
