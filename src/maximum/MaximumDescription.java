@@ -20,8 +20,7 @@ public class MaximumDescription implements Problem, Solution{
 	 * Constructor: MaximumDescription
 	 */
 	public MaximumDescription(ArrayList<Integer> vector) {
-		setVector(vector);
-		setMaximum(0);
+		resetMaximum(vector);
 	}
 
 	/**
@@ -29,6 +28,13 @@ public class MaximumDescription implements Problem, Solution{
 	 */
 	public int getProblemSize() {
 		return vector.size();
+	}
+	/**
+	 * resetMaximum
+	 */
+	public void resetMaximum(ArrayList<Integer> vector) {
+		setVector(vector);
+		setMaximum(0);
 	}
 	/**
 	 * decomposeProblem

@@ -24,6 +24,7 @@ public class MergeSort extends Framework{
 	@Override
 	protected boolean isSimple(Problem problem) {
 		// TODO Auto-generated method stub)
+		((MergeSortDescription)problem).incrementCounter();
 		return (((MergeSortDescription)problem).getProblemSize() <= 1);
 	}
 
@@ -64,6 +65,7 @@ public class MergeSort extends Framework{
 				combinedSolutions.add(right.getFirstElement());
 				right.deleteFirstElement();
 			}
+			((MergeSortDescription)problem).incrementCounter();
 		}
 		if(left.getProblemSize() > 0) {
 			for(int i = 0; i < left.getProblemSize(); i++) 
@@ -73,6 +75,9 @@ public class MergeSort extends Framework{
 			for(int i = 0; i < right.getProblemSize(); i++) 
 				combinedSolutions.add(right.getElement(i));
 		}
+		((MergeSortDescription)problem).incrementCounter();
+		((MergeSortDescription)problem).incrementCounter();
+		
 		((MergeSortDescription)problem).setVector(combinedSolutions);
 		return (Solution)problem;
 	}

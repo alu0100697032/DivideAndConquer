@@ -15,10 +15,18 @@ public class MergeSortDescription implements Problem, Solution{
 	 * Atributes
 	 */
 	private ArrayList<Integer> vector;
+	private int counter;
 	/**
 	 * Constructor: MergeSortDescription
 	 */
 	public MergeSortDescription(ArrayList<Integer> vector) {
+		resetMergeSort(vector);
+	}
+	/**
+	 * resetMergeSort
+	 */
+	public void resetMergeSort(ArrayList<Integer> vector) {
+		setCounter(0);
 		setVector(vector);
 	}
 	/**
@@ -73,5 +81,24 @@ public class MergeSortDescription implements Problem, Solution{
 	 */
 	public void setVector(ArrayList<Integer> vector) {
 		this.vector = vector;
+	}
+	/**
+	 * @return the counter
+	 */
+	public int getCounter() {
+		int aux = counter;
+		return aux;
+	}
+	/**
+	 * @param counter the counter to set
+	 */
+	public void setCounter(int counter) {
+		this.counter = counter;
+	}
+	/**
+	 * incrementCounter
+	 */
+	public void incrementCounter() {
+		counter++;
 	}
 }
