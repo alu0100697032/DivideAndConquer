@@ -7,6 +7,7 @@ package global;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 import framework.Solution;
 import maximum.Maximum;
@@ -24,8 +25,12 @@ public class Main {
 		Random random = new Random();
 		ArrayList<Integer> mergeCounters = new ArrayList<>(); 
 		ArrayList<Integer> selectionCounters = new ArrayList<>(); 
-		int problemSize = 10;
-		int numberOfTests = 10;
+		Scanner readUserInput = new Scanner(System.in);
+		System.out.println("\t-Divide and Conquer-");
+		System.out.println("Enter problem size: ");
+		int problemSize = readUserInput.nextInt();
+		System.out.println("Enter number of tests: ");
+		int numberOfTests = readUserInput.nextInt();
 		String output = "Problem size: " + problemSize + "\n";
 		/**
 		 * Random tests
@@ -117,5 +122,6 @@ public class Main {
 		
 		WriteFile writeFile = new WriteFile();
 		writeFile.write("src/output.txt", output);
+		readUserInput.close();
 	}
 }
