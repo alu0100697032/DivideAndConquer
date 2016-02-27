@@ -29,3 +29,12 @@ algoritmo y cada tamaño de problema.
 * La implementación se realizará utilizando los lenguajes C++ o Java.
 * Se podrán ejecutar todos los algoritmos implementados con tamaños de problemas
 pequeños para comprobar su funcionamiento.
+
+## Estudio comparativo
+
+El estudio comparativo se hará entre los algoritmos Merge Sort, usando la técnica divide y vencerás, y el algoritmo de ordenación cuadrático Selection Sort. Se ha usado, para cada tamaño del problema, un número de 10 pruebas. 
+
+<p align="center"> <img src="comp.png"> </p>
+<p align="center"> <img src="grafica.png"> </p>
+
+
